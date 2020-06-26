@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 2100px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0 -15px;
+}
+header .Riot {
+    font-size: 50px;
+
+}
+header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+header .content .burger span {
+    display: block;
+    height: 2px;
+    background-color: #222222;
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+header .content .burger span:nth-child(2){
+    width: 20px;
+}
+
+header .content .burger span:nth-child(3){
+    width: 25px;
+}
+
+.btn-def {
+    padding: 17px 25px;
+    display: inline-block;
+    text-align: center;
+    color: #222222;
+    font-size: 12px;
+    border: 1px solid #ff0022;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: .5s ease;
+}
+
+.btn-def:hover{
+    background-color: #ff0022;
+    color: white;
+}
+
+.outer-conteiner {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.outer-conteiner > div {
+    width: 50%;
+    height: 750px;
+}
+
+.outer-conteiner .left .content {
+    width:  400px;
+    margin: 0 auto;
+    margin-top: 30%;
+    margin-left: 30%;
+    transform: translateY(-50%);
+}
+
+.outer-conteiner .left .content h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 30px;
+} 
+
+.outer-conteiner .left .content p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 23px;
+}
+
+.intro .right {
+    margin-top: 50px;
+    margin-right: 20px;
+    background-image: url('../img/1072679-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.intro .right .play-vid .play-vid-bg:hover {
+    cursor: pointer;
+}
+.intro .right .play-vid img:hover {
+    cursor: pointer;
+}
+
+.intro .right .play-vid  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro .right .play-vid .play-vid-bg {
+    width: 140px;
+    height: 140px;
+    background: #ff0022;
+    position: absolute;
+    bottom: 40.35%;
+    left: -65px;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-box-shadow: -1px 2px 10px 0px rgba(0,0,0,0.74);
+-moz-box-shadow: -1px 2px 10px 0px rgba(0,0,0,0.74);
+box-shadow: -1px 2px 10px 0px rgba(0,0,0,0.74);
+}
+
+.intro .right .play-vid img {
+    width: 40px;
+    margin-left: -98.5%;
+    z-index: 2;
+}
+
+.intro .right .play-vid .play-vid-bg-anima {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 39.7%;
+    left: -5.5%;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(-13%,11%);
+    animation: triangleAnima 2s ease infinite;
+}
+
+@keyframes triangleAnima {
+    
+    to{
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+}
+
+.sect-2>div {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.sect-2 .outer-conteiner .left .content {
+    margin-top: 20%;
+}
+.sect-2 .outer-conteiner .right {
+    margin-right: 100px;
+}
+
+.sect-2  > div {
+    width: 50%;
+    height: 750px;
+}
+
+.sect-2 .item {
+    position: relative;
+    height: 480px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sect-2 .item .top-title {
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+.sect-2 .item .lucio{
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .omen{
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 110px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .raze{
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 110px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .reyna{
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 115px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .viper{
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 118px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .breach{
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 97px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .cypher{
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 103px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .sub-title {
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 425px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .duelist {
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 92px;
+    margin-top: 425px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .controller {
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 67px;
+    margin-top: 425px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    transform: uppercase;
+}
+
+.sect-2 .item .initiator {
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 95px;
+    margin-top: 425px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .item .initiator-breach {
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    margin-left: 82.25px;
+    margin-top: 425px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.sect-2 .box {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.178);
+    opacity: 0;
+}
+
+.sect-2 .item:hover .top-title{
+    opacity: 1;
+}
+.sect-2 .item:hover .box{
+    opacity: 1;
+}
+.sect-2 .item:hover .sub-title{
+    opacity: 1;
+}
+
+.sect-3 .right .img-conteiner {
+    width: 100%;
+    height: 100%;
+    background: rgb(29, 27, 46);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/CSDI.png);
+}
+
+.intro .right .play-vid .trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    z-index: 123213123;
+    background: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.intro .right .play-vid .trailer.active{
+    visibility: visible;
+    opacity: 1;    
+}
+
+.intro.right .play-vid .trailer video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+@media ( max-width: 991px) {
+    
+.intro .right .play-vid .trailer video {
+    max-width: 90%;
+}
+
+}
+.sect-3 .left .content p {
+    font-size: 20px;
+}
+
+.sect-3 .left .content .type {
+    font-size: 50px;
+    color: black;
+    font-family: 'Robot';
+}
+
+.sect-4 {
+    margin-top: 100px;
+}
+
+.sect-4 .heading {
+    margin-left: 4.25%;
+}
+.sect-4 .heading h2{
+    font-family: 'Playfair Display' serif;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.sect-4 .item .desc h3{
+    font-family: 'Playfair Display' serif;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.sect-4 .item {
+    margin-top: 30px;
+    margin-left: 4.25%;
+    margin-bottom: 3%;
+    width: 20%;
+    display: inline-block;
+}
+
+.sect-4 .item .img {
+    padding-top: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sect-4 .item .desc {
+    border: 1px solid #f3f3f3;
+    padding: 30px 20px;
+}
+
+footer {
+    background-color: #111111;
+    color: white;
+    margin-top: 150px;
+}
+
+footer .foot-top {
+    padding: 100px 0;
+}
+
+footer .foot-bot {
+    padding: 40px 0 30px;
+    border-top: 1px solid #777777;
+}
+footer .foot-bot .links {
+    margin-top: 15px;
+    margin-left: 42%;
+}
+footer .foot-bot .links a {
+    margin-left: 10px;
+}
+footer .foot-bot p{
+    margin-left: 23%;
+}
